@@ -1,21 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minha Biblioteca de ROMs</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paceroms - ROMs para download</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Fonte pixelada -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <h1>📀 Biblioteca de ROMs</h1>
-  </header>
+    <header>
+        <div class="header-container">
+            <h1>Paceroms</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#">Categorias</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <input type="text" id="search" placeholder="Buscar ROM..." />
-    <ul id="rom-list"></ul>
-  </main>
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div> <!-- Overlay para a imagem de fundo -->
+            <div class="hero-content">
+                <h2>Encontre suas ROMs favoritas!</h2>
+                <p>Desfrute de uma coleção incrível de jogos clássicos.</p>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+        <section class="roms">
+            <h2>ROMs Populares</h2>
+            <div class="rom-grid">
+                <div class="rom-item">
+                    <img src="rom1.jpg" alt="Super Mario Bros">
+                    <h3>Super Mario Bros</h3>
+                    <button>Baixar</button>
+                </div>
+                <div class="rom-item">
+                    <img src="rom2.jpg" alt="Legend of Zelda">
+                    <h3>Legend of Zelda</h3>
+                    <button>Baixar</button>
+                </div>
+                <div class="rom-item">
+                    <img src="rom3.jpg" alt="Pokémon Red">
+                    <h3>Pokémon Red</h3>
+                    <button>Baixar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Paceroms. Todos os direitos reservados.</p>
+    </footer>
 </body>
+
 </html>

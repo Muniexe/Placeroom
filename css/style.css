@@ -1,0 +1,169 @@
+/* Reset de margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1e2a1f;
+  padding: 20px 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #6b8e23;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #8fbc8f;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #98fb98;
+}
+
+/* Seção Hero */
+.hero {
+  position: relative;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20221205/pngtree-jungle-forest-8-bit-pixel-game-level-landscape-with-palms-image_1489850.jpg'); /* Coloque o caminho da sua imagem de fundo aqui */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Escurecer a imagem */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* Seção de ROMs Populares */
+.roms {
+  padding: 40px 20px;
+  background-color: #1e2a1f;
+}
+
+.roms h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #6b8e23;
+  margin-bottom: 20px;
+}
+
+.rom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.rom-item {
+  background-color: #2a3d2b;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  max-width: 250px;
+}
+
+.rom-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.rom-item h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.rom-item button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  background-color: #6b8e23;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rom-item button:hover {
+  background-color: #556b2f;
+}
+
+/* Efeitos hover */
+.rom-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Rodapé */
+footer {
+  background-color: #1e2a1f;
+  text-align: center;
+  padding: 20px 10px;
+  color: #c0c0c0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .rom-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .rom-item {
+      max-width: 90%;
+  }
+}
+
